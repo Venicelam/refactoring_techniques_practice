@@ -24,8 +24,21 @@ public class OwingPrinterTest {
     }
 
     @Test
-    public void printOwing() {
-//        System.out.print("hello");
-//        assertEquals("hello", outContent.toString());
+    public void printBanner() {
+        OwingPrinter owingPrinter = new OwingPrinter();
+        owingPrinter.printBanner();
+        assertEquals("*****************************\r\n"
+                + "****** Customer totals ******\r\n"
+                + "*****************************\r\n", outContent.toString());
+    }
+     @Test
+    public void calOutstanding() {
+        OwingPrinter owingPrinter = new OwingPrinter();
+    }
+     @Test
+    public void printDetails() {
+        OwingPrinter owingPrinter = new OwingPrinter();
+        owingPrinter.printDetails("aaaa", 555.0);
+        assertEquals("name: aaaa\r\n" + "amount: 555.0\r\n", outContent.toString());
     }
 }
