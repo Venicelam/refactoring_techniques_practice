@@ -14,7 +14,7 @@ public class OwingPrinter {
         double outstanding = calOutstanding(orders);
         printDetails(name, outstanding);
     }
-    void printBanner(){
+    public void printBanner(){
         System.out.println("*****************************");
         System.out.println("****** Customer totals ******");
         System.out.println("*****************************");
@@ -31,7 +31,7 @@ public class OwingPrinter {
         }
 
         // print details
-        void printDetails(String name, double outstanding){
+        public void printDetails(String name, double outstanding){
         System.out.println("name: " + name);
         System.out.println("amount: " + outstanding);
     }

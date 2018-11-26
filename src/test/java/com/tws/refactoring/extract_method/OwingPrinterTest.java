@@ -1,5 +1,6 @@
-package com.tws.refactoring.extract_method;
+package com.tws.refactoring.extract_method.extract_method;
 
+import com.tws.refactoring.extract_method.OwingPrinter;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
